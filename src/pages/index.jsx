@@ -1,12 +1,18 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import Button from '../components/Button';
+import styles from './index.module.css';
+
+const Intro = () => (
+  <div className={styles.intro}>
+    <h1>Captivating Corsages</h1>
+    <Button>Order</Button>
+  </div>
+);
 
 const IndexPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+  <div style={{ height: '100%' }}>
+    <Intro />
+    <div>Gallery Content</div>
   </div>
 );
 

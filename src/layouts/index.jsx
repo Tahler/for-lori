@@ -7,10 +7,10 @@ import './index.css';
 const IndexLayout = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby Strict Starter"
+      title="Captivating Corsages"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Corsages in the Bay Area' },
+        { name: 'keywords', content: 'corsages, flowers, San Jose, Bay Area' },
       ]}
     />
     <div

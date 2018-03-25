@@ -1,0 +1,27 @@
+/* Usable with <a> or <button>. */
+.button {
+  display: inline-block;
+  padding: 15px 40px;
+  line-height: 1em;
+  color: #fff;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  font-weight: bold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  background-color: #f06060;
+  box-shadow: 0px 3px 0px 0px #cd1313;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+.button:hover {
+  background-color: #ed4444;
+}
+.button:active {
+  box-shadow: 0px 1px 0px 0px #cd1313;
+}

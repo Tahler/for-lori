@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../components/Button';
 import styles from './index.module.css';
-import flower from './flower.jpg';
+import flower from './flower2.jpg';
 
 const Intro = () => (
     <div className={styles.intro}>
@@ -14,16 +14,9 @@ const Intro = () => (
 const Nav = () => {
     // TODO scroll spy and remove absolute positioning
     return (
-        <nav style={{
-            bottom: 0,
-            position: 'absolute',
-            // float: 'right',
-            // flexAlign: 'end',
-        }}>
+        <nav style={{alignSelf: 'flex-end'}} className={styles.nav}>
             <ul style={{
-                display: 'block',
-                float: 'left',
-                listStyle: 'none',
+                display: 'flex',
             }}>
                 <li><a href="#">Gallery</a></li>
                 <li><a href="#">About</a></li>
@@ -34,17 +27,22 @@ const Nav = () => {
 
 const Tile = ({ src }) => (
     <div style={{
-        padding: '10px',
+        margin: '8px',
+        border: '2px solid #777',
+        padding: '8px',
     }}>
         <img style={{margin: 0}} src={src} alt="tile" />
     </div>
 );
 
 const Gallery = () => {
-    const imgs = [flower, flower, flower].map(src => (<Tile src={src} />));
+    const imgs = [flower, flower, flower, flower, flower, flower, flower]
+            .map(src => (<Tile src={src} />));
     return (
         <div style={{
             display: 'flex',
+            justifyContent: 'center',
+            flexWrap: 'wrap',
         }}>
             {imgs}
         </div>
@@ -54,7 +52,7 @@ const Gallery = () => {
 const IndexPage = () => (
     <div style={{ height: '100%' }}>
         <Intro />
-        <div>Gallery Content</div>
+        <h2>Gallery</h2>
         <Gallery />
     </div>
 );

@@ -5,4 +5,33 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: #eee;
+}
+
+.nav {
+    bottom: 0;
+    position: absolute;
+    float: right;
+    text-align: right;
+}
+.nav ul {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    list-style: none;
+    display: flex;
+}
+.nav ul li {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-right: 24px;
+}
+.nav ul li a,
+.nav ul li a:visited {
+    color: #777;
+    text-decoration: none;
+}
+.nav ul li a:hover {
+    color: red;
+    transition: color 0.5s;
 }

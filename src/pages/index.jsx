@@ -4,10 +4,10 @@ import styles from './index.module.css';
 import flower from './flower.jpg';
 
 const Intro = () => (
-  <div className={styles.intro}>
-    <h1>Captivating Corsages</h1>
-    <Button>Order</Button>
-  </div>
+    <div className={styles.intro}>
+        <h1>Captivating Corsages</h1>
+        <Button>Order</Button>
+    </div>
 );
 
 const Tile = ({ src }) => (
@@ -30,11 +30,11 @@ const Gallery = () => {
 };
 
 const IndexPage = () => (
-  <div style={{ height: '100%' }}>
-    <Intro />
-    <div>Gallery Content</div>
-    <Gallery />
-  </div>
+    <div style={{ height: '100%' }}>
+        <Intro />
+        <div>Gallery Content</div>
+        <Gallery />
+    </div>
 );
 
 export default IndexPage;

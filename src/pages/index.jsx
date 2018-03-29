@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../components/Button';
 import styles from './index.module.css';
+import flower from './flower.jpg';
 
 const Intro = () => (
   <div className={styles.intro}>
@@ -9,10 +10,30 @@ const Intro = () => (
   </div>
 );
 
+const Tile = ({ src }) => (
+    <div style={{
+        padding: '10px',
+    }}>
+        <img style={{margin: '0'}} src={src} alt="tile" />
+    </div>
+);
+
+const Gallery = () => {
+    const imgs = [flower, flower, flower].map(src => (<Tile src={src} />));
+    return (
+        <div style={{
+            display: 'flex',
+        }}>
+            {imgs}
+        </div>
+    );
+};
+
 const IndexPage = () => (
   <div style={{ height: '100%' }}>
     <Intro />
     <div>Gallery Content</div>
+    <Gallery />
   </div>
 );
 

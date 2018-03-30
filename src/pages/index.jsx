@@ -28,27 +28,48 @@ const Nav = () => (
 const Tile = ({ src }) => (
   <div
     style={{
-      margin: '8px',
-      border: '2px solid #777',
-      padding: '8px',
+      margin: '4px',
+      // border: '2px solid #777',
+      // borderRadius: '8px',
+      // padding: '8px',
     }}
   >
-    <img style={{ margin: 0 }} src={src} alt="tile" />
+    <img
+      style={{
+        margin: 0,
+        display: 'block',
+        borderRadius: '8px',
+      }}
+      src={src}
+      alt="tile"
+    />
   </div>
 );
 
 Tile.propTypes = { src: PropTypes.string.isRequired };
 
 const Gallery = () => {
-  const url =
-    'https://www.fiftyflowers.com/site_files/FiftyFlowers/Image/Product/salmon-dahlia-flower-500_5bc0386d.jpg';
-  const imgs = [url, url].map(src => <Tile src={src} />);
+  const srcs = [
+    'http://placehold.it/240x240',
+    'http://placehold.it/480x240',
+    'http://placehold.it/480x240',
+    'http://placehold.it/240x240',
+    'http://placehold.it/480x240',
+    'http://placehold.it/240x240',
+    'http://placehold.it/120x240',
+    'http://placehold.it/240x240',
+    'http://placehold.it/120x240',
+    'http://placehold.it/240x240',
+    'http://placehold.it/480x240',
+  ];
+  const imgs = srcs.map(src => <Tile src={src} />);
   return (
     <div
       style={{
         display: 'flex',
-        justifyContent: 'center',
+        flexDirection: 'row',
         flexWrap: 'wrap',
+        justifyContent: 'center',
       }}
     >
       {imgs}

@@ -12,7 +12,8 @@
     "gatsby": "^1.9.175",
     "gatsby-link": "^1.6.35",
     "gatsby-plugin-react-helmet": "^2.0.4",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-scrollspy": "^3.3.5"
   },
   "devDependencies": {
     "eslint": "^4.16.0",
